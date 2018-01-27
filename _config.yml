@@ -1,63 +1,32 @@
-# Site
-title:              J. Prescott Sanders
-bio:                'J. Prescott Sanders'
-description:        "There and Back Again."
-locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.jprescottsanders.com" # the base hostname & protocol for your site
+# site settings
+title: J. Prescott Sanders
+subtitle: There and Back Again!
+email: youremailaddress@gmail.com
+description: There and Back Again!
+baseurl: "/massively-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author:
+street_address: 
+city: Indianapolis
+state: IN
+zip_code: 
+country: United States of America
+phone: (716) 555-5555
 
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
+# social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/jprescottsanders
+gitlab_url: https://gitlab.com/u/jprescottsanders
+googleplus_url:
+instagram_url:
+linkedin_url: 
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/prescottsanders
 
-# Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
+# build settings
+markdown: kramdown
+
 sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Comments
-disqus_shortname:   default
-
-# Social
-analytics-id:       "default"
-twitter:            prescottsanders
-facebook:           default
-instagram:          default
-github:             jprescottsanders
-
-# personal
-location:           Indianapolis, IN
-phone:              
-email:              
-
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
-paginate: 6
-paginate_path: "/blog/page:num/"
-
-jekyll-mentions:
-    base_url: https://github.com
-
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+  style: compressed
